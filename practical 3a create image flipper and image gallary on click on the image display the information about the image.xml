@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/html"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/html"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="137dp"/>
+
+            <ImageView
+                android:id="@+id/python"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/python"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="137dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/java"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/java"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="327dp"/>
+
+            <ImageView
+                android:id="@+id/kotlin"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/kotlin"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="327dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/ruby"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ruby"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="235dp"
+                tools:layout_editor_absoluteY="503dp"/>
+
+            <ImageView
+                android:id="@+id/go"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/go"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="503dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

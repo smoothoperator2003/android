@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="uƞ-8"?> 
+<RelaƟveLayout xmlns:android="hƩp://schemas.android.com/apk/res/android"
+ xmlns:tools="hƩp://schemas.android.com/tools"
+ android:layout_width="match_parent" 
+ android:layout_height="match_parent" 
+ tools:context=".MainAcƟvity"> 
+ <!-- add Camera BuƩon to open the Camera --> 
+ <BuƩon
+ android:id="@+id/camera_buƩon"
+ android:layout_width="100dp" 
+ android:layout_height="50dp" 
+ android:layout_marginStart="150dp" 
+ android:text="Camera" /> 
+ <!-- add ImageView to display the captured image --> 
+ <ImageView 
+ android:id="@+id/click_image" 
+ android:layout_width="350dp" 
+ android:layout_height="450dp" 
+ android:layout_marginStart="30dp" 
+ android:layout_marginTop="70dp" 
+ android:layout_marginBoƩom="10dp" /> 
+</RelaƟveLayout>

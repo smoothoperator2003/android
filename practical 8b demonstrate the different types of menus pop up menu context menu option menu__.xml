@@ -1,0 +1,7 @@
+<resources> 
+ <string name="app_name">PopupMenu</string> 
+ <string name="acƟon_seƫngs">Seƫngs</string> 
+ <string name="acƟon_cricket">Cricket</string> 
+ <string name="acƟon_football">Football</string> 
+ <string name="acƟon_hockey">Hockey</string> 
+</resources> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="uƞ-8"?> 
+<menu xmlns:android="hƩp://schemas.android.com/apk/res/android"
+ xmlns:app="hƩp://schemas.android.com/apk/res-auto"> 
+ <item 
+ android:id="@+id/acƟon_crick"
+ android:Ɵtle="@string/acƟon_cricket"
+ app:showAsAcƟon="never"/> 
+ <item 
+ android:id="@+id/acƟon_Ōbal"
+ android:Ɵtle="@string/acƟon_football"
+ app:showAsAcƟon="never"/> 
+ <item 
+ android:id="@+id/acƟon_hockey"
+ android:Ɵtle="@string/acƟon_hockey"
+ app:showAsAcƟon="never"/> 
+</menu>
