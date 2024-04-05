@@ -1,43 +1,32 @@
-package com.example.prac7a 
-import android.media.MediaPlayer 
-import androidx.appcompat.app.AppCompatAcƟvity
-import android.os.Bundle 
-import android.widget.BuƩon
-class MainAcƟvity: AppCompatAcƟvity(){
- override fun onCreate(savedInstanceState: Bundle?){ 
- super.onCreate(savedInstanceState) 
- setContentView(R.layout.acƟvity_main) 
- //createaninstanceofmediplayerforaudioplayback 
- val mediaPlayer: MediaPlayer=MediaPlayer.create(applicaƟonContext,R.raw.music) 
- //registerallthebuƩonsusingtheirappropriateIDs
- val bPlay: BuƩon=findViewById(R.id.playBuƩon) 
- val bPause: BuƩon=findViewById(R.id.pauseBuƩon) 
- val bStop: BuƩon=findViewById(R.id.stopBuƩon) 
- //handlethestartbuƩonto
- //starƩheaudioplayback
- bPlay.setOnClickListener{ 
- //startmethodisusedtostart 
- //playingtheaudiofile 
- mediaPlayer.start() 
- } 
- //handlethepausebuƩontopuƩhe
- //MediaPlayerinstanceaƩhePausestate
- bPause.setOnClickListener{ 
- //pause()methodcanbeusedto 
- //pausethemediaplyerinstance 
- mediaPlayer.pause() 
- } 
- //handlethestopbuƩontostopplaying
- //andpreparethemediaplayerinstance 
- //forthenexƟnstanceofplay
- bStop.setOnClickListener{ 
- //stop()methodisusedtocompletely 
- //stopplayingthemediaplayerinstance 
- mediaPlayer.stop() 
- //aŌerstoppingthemediaplayerinstance
- //iƟsagainneedtobeprepared
- //forthenexƟnstanceofplayback
- mediaPlayer.prepare() 
- } 
- } 
-} 
+package com.example.prac7a
+
+import android.media.MediaPlayer
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val mediaPlayer: MediaPlayer = MediaPlayer.create(applicationContext, R.raw.music)
+
+        val bPlay: Button = findViewById(R.id.playButton)
+        val bPause: Button = findViewById(R.id.pauseButton)
+        val bStop: Button = findViewById(R.id.stopButton)
+
+        bPlay.setOnClickListener {
+            mediaPlayer.start()
+        }
+
+        bPause.setOnClickListener {
+            mediaPlayer.pause()
+        }
+
+        bStop.setOnClickListener {
+            mediaPlayer.stop()
+            mediaPlayer.prepare()
+        }
+    }
+}
