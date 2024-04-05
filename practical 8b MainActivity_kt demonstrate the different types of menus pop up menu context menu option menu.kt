@@ -1,32 +1,29 @@
-package com.example.prac8b 
-import androidx.appcompat.app.AppCompatAcƟvity
-import android.os.Bundle 
-import android.widget.BuƩon
-import android.widget.PopupMenu 
-import android.widget.Toast 
-class MainAcƟvity : AppCompatAcƟvity() {
- override fun onCreate(savedInstanceState: Bundle?) { 
- super.onCreate(savedInstanceState) 
- setContentView(R.layout.acƟvity_main) 
- val buƩon = findViewById<BuƩon>(R.id.buƩon) 
- buƩon.setOnClickListener { 
- val popupMenu: PopupMenu = PopupMenu(this,buƩon)
- popupMenu.menuInflater.inflate(R.menu.popup_menu,popupMenu.menu) 
- popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { 
- item -> when(item.itemId) { 
- R.id.acƟon_crick -> 
- Toast.makeText(this@MainAcƟvity, "You Clicked : " + item.Ɵtle, 
- Toast.LENGTH_SHORT).show() 
- R.id.acƟon_Ōbal -> 
- Toast.makeText(this@MainAcƟvity, "You Clicked : " + item.Ɵtle, 
- Toast.LENGTH_SHORT).show() 
- R.id.acƟon_hockey -> 
- Toast.makeText(this@MainAcƟvity, "You Clicked : " + item.Ɵtle, 
- Toast.LENGTH_SHORT).show() 
- } 
- true 
- }) 
- popupMenu.show() 
- } 
- } 
-} 
+package com.example.prac8b
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.PopupMenu
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val button = findViewById<Button>(R.id.button)
+        button.setOnClickListener {
+            val popupMenu = PopupMenu(this, button)
+            popupMenu.menuInflater.inflate(R.menu.popup_menu, popupMenu.menu)
+            popupMenu.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.action_cricket -> Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                    R.id.action_football -> Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                    R.id.action_hockey -> Toast.makeText(this@MainActivity, "You Clicked : " + item.title, Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+            popupMenu.show()
+        }
+    }
+}
